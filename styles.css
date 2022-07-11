@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+  
+.block {
+  z-index: 10;
+  position: absolute;
+}
+
+#container {
+  /* --x1: calc(100vw/2);
+  --x2: calc(100vw/2 + 20px); */
+  --x1: 500px;
+  --x2: 600px;
+/*
+  --y1: 0px;
+  --y2: 0px; */
+
+  --width: 0px;
+  --height: 0px;
+  width: var(--width);
+  height: var(--height);
+
+  background: black;
+  position: absolute;
+
+  bottom: calc(50% - (var(--height)/2));
+  /* NOT SURE ABOUT RIGHT AND TOP */
+  right: 50%;
+  top: 50%;
+  left: calc(50% - (var(--width)/2));
+
+  z-index: 7;
+}
+
+#frame-zero {
+  --blockSize: 10px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: red;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px
+}
+
+#frame-one {
+  --blockSize: 10px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: orange; 
+
+  position: absolute;
+  bottom: 10px;
+  left: 0px
+}
+
+#frame-two {
+  --blockSize: 20px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: yellow; 
+
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+
+#frame-three {
+  --blockSize: 30px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: green; 
+
+  position: absolute;
+  bottom: -30px;
+  left: 0px
+}
+
+#frame-four {
+  --blockSize: 50px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: blue; 
+
+  position: absolute;
+  bottom: -30px;
+  left: -50px
+}
+
+#frame-five {
+  --blockSize: 80px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: violet; 
+
+  position: absolute;
+  bottom: 20px;
+  left: -50px;
+
+  z-index: 1;
+}
+
+#frame-six {
+  --blockSize: 130px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: red; 
+
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+}
+
+#frame-seven {
+  --blockSize: 210px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: orange; 
+
+  position: absolute;
+  bottom: -240px;
+  left: -50px
+}
+
+#frame-eight {
+  --blockSize: 340px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: yellow; 
+
+  position: absolute;
+  bottom: -240px;
+  left: -390px
+}
+
+#frame-nine {
+  --blockSize: 550px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: green; 
+
+  position: absolute;
+  bottom: 100px;
+  left: -390px
+}
+
+#frame-ten {
+  --blockSize: 890px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: blue; 
+
+  position: absolute;
+  bottom: -240px;
+  left: 160px
+}
+
+#frame-eleven {
+  --blockSize: 1440px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: violet; 
+
+  position: absolute;
+  bottom: -1680px;
+  left: -390px
+}
+
+#frame-twelve {
+  --blockSize: 2330px;
+  width: var(--blockSize);
+  height: var(--blockSize);
+  background: red; 
+
+  position: absolute;
+  bottom: -1680px;
+  left: -2720px
+} 
+
+/* TOP LEFT CORNER OF RED SQUARE IS DATUM */
